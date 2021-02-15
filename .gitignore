@@ -1,3 +1,7 @@
+#files specific to this project 
+raw/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
