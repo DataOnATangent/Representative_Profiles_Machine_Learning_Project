@@ -62,7 +62,7 @@ That being said, the differences between the general sample and tech workers was
 When moving on to models the complicated nature of the data once again became evident. Despite trying multiple types of models, all of them had a tendency to overfit. In the case of all the ensemble methods I attempted, all of them were very unstable with metric results varying dramatically from prediction to prediction. This ultimately lead me to choosing logistic regression for my final model. 
 
  
-<p align="center"><img width="400" height="300" src="/images/roc.png" alt="roc_chart"></p> 
+<p align="center"><img width="500" height="400" src="/images/roc.png" alt="roc_chart"></p> 
 
 This model ultimately produced the best results for my data, though notable also overfit. This despite two rounds of feature selection and gridsearch to optimize my parameters. This leads me to believe that in order to perfect this predictor additional work and possibly outside data would be needed to move forward with the overall goal of being able to classify observations by these kinds of features. 
 
