@@ -3,7 +3,7 @@
 Authors: [Jiji Craynock](https://github.com/DataOnATangent)
 
 <p><img src="/images/banner.png" alt="Header"></p>
-'(Correlation Chart of All Features)'
+
 
 ## Overview
 The US is known as the melting pot of the world a fact that demonstrates pride in diversity. Nevertheless, those of us who live here are aware that in many spaces the lack of variety in background is something that seems to occur quite often. In this case study, I test several categorical models in order to determine whether an individual can be properly classified as working in the computer/tech space by features by demographic information.   In order to do this, I have used the okcupid dataset (available on kaggle and linked below) and focus on the following questions:
