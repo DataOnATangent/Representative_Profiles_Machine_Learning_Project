@@ -38,42 +38,40 @@ The US is known as the melting pot of the world a fact that demonstrates pride i
 
 During the preprocessing stage it became immediately clear that this data would contain high variance. A fact that is expected given that the observations are real people and the sorce was dating profiles. This lead to a lengthy cleaning process in order to pair down features in the hopes of reducing the noise in the data. In the end, I still had many features to work with as seen in the correlation chart.  
 
-<p align="center"><img width="300" height="300" src="/images/Corr.png" alt="okc_logo"></p>
+<p align="center"><img width="400" height="300" src="/images/Corr.png" alt="correlation_chart"></p>
 
 
+Once the features had been peen put into charts individually, I was able to see that many features including had major imbalances. These imbalances were even more apperant when grouped compared specifically to those that do and do not work in the tech sphere.  
 
-This case study is speculative in nature, and so we use accuracy as our metric to evaluate the success of each model. Simply put, we use the accuracy score here because there is no particularly heavy risk associated with either Type I or Type II errors.
+<p align="center">
+    <img width="200" height="150" src="/images/Dist_gen.png" alt="gender_chart">
+    <img width="200" height="150" src="/images/Dist_body.png" alt="body_chart">
+    <img width="200" height="150" src="/images/Dist_ethn.png" alt="ethn_chart">
+</p>
 
-The null accuracy, which is a baseline metric used to evaluate the final model, is 71%. Our best model uses scikit-learn Random Forests, which produced an **82% accuracy**. We can therefore say that using Random Forests provides significant predicting power for the data.
+That being said, the differences between the general sample and tech workers was still highly relative due to the class imbalance between the positive and negative class. Something that is a bit easier to see when looking at parallel plots
 
-Several straight forward features helped the model such as occupation, weekly hours worked, age, education, and work industry.
+<p align="center">
+    <img width="200" height="150" src="/images/p_sex_ethn.png" alt="gender_chart">
+    <img width="200" height="150" src="/images/p_bod_ori.png" alt="body_chart">
+    <img width="200" height="150" src="/images/p_sm_dri_drug.png" alt="smo_chart">
+</p>
 
-More notably, using sklearn's GridSearch, additional valuable features were identified: 
 
-* Place of birth
-* Sex
-* Couple status (married v. unmarried and same-sex partner vs opposite-sex partner)
-* Whether or not a person has given birth in the last 12 months.
+When moving on to models the complicated nature of the data once again became evident. Despite trying multiple types of models, all of them had a tendency to overfit. In the case of all the ensemble methods I attempted, all of them were very unstable with metric results varying dramatically from prediction to prediction. This ultimately lead me to choosing logistic regression for my final model. 
 
  
-<p><img src="./images/important_features.png" alt="Features"></p>
+<p align="center"><img width="400" height="300" src="/images/roc.png" alt="roc_chart"></p> 
+
+This model ultimately produced the best results for my data, though notable also overfit. This despite two rounds of feature selection and gridsearch to optimize my parameters. This leads me to believe that in order to perfect this predictor additional work and possibly outside data would be needed to move forward with the overall goal of being able to classify observations by these kinds of features. 
 
 ## Conclusion
 
-
+This project took many twist and terms and ultimately my model did not perform as well as I may have like but I do think there are reasons for that beyond the model. The fact that the model had trouble predicting is a good thing. It means my target is varied enough to not be easily distinguished which leads me to think that the population of people who work in tech, is in fact, quite diverse. Though further testing would be needed to prove this theory.
 
 ## Next Steps
 
-Next we recommend to take a look into individual states. We saw in our final model that an person's place of birth is a strong indicator of income. (Birth place in this data set is coded by state and also by country if outside of the US.) Place of birth is likely a strong indicator of where an individual currently lives as well. Access to more drilled-down information should prove inciteful. 
-
-There are also a few variables not included which may provide further insight such as features indicating disability, number of dependants, and zipcode.
-
-Lastly, the target variable for this particular model is income which includes a myriad of revenue. According to census.gov, "income" includes: 
-
-"income received from wages, salary, commissions, bonuses, and tips; self-employment income from own nonfarm or farm businesses, including proprietorships and partnerships; interest, dividends, net rental income, royalty income, or income from estates and trusts; Social Security or Railroad Retirement income; Supplemental Security Income (SSI); any cash public assistance or welfare payments from the state or local welfare office; retirement, survivor, or disability benefits; and any other sources of income received regularly such as Veterans' (VA) payments, unemployment and/or worker’s compensation, child support, and alimony."
-
-It may be relevant to compare income with salary, which is defined simply as compensation of employees from an employer (and not including tax or retirement witholdings). Looking into salary may yield different, and perhaps more precise, results as it would not include as many variables.
-
+In order to take this project to the next level, I believe there are a number of things that could be done. Among the first steps would be to re-integrate many of the attitudes and more specific categories that were simplified early on in this project. Next, I think using data from a non-dating site would perhaps also give a clearer picture since it is hard to say if this sample is truly representative of the whole give where the data was sourced from. 
 
 ## Repository Structure
     
