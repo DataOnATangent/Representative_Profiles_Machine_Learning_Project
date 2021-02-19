@@ -7,7 +7,7 @@ Authors: [Jiji Craynock](https://github.com/DataOnATangent)
 ## Overview
 The US is known as the melting pot of the world a fact that demonstrates pride in diversity. Nevertheless, those of us who live here are aware that in many spaces the lack of variety in background is something that seems to occur quite often. In this case study, I test several categorical models in order to determine whether an individual can be properly classified as working in the computer/tech space by features by demographic information.   In order to do this, I have used the okcupid dataset (available on kaggle and linked below) and focus on the following questions:
 
-<p align="center"><img width="150" height="100" src="/images/okc_logo.png" alt="okc_logo"></p>
+<p align="center"><img width="240" height="200" src="/images/okc_logo.png" alt="okc_logo"></p>
 
 * How do physical attributes such as body type, age, and height affect the likelihood of a person working in the tech space?
 * How do cultural attributes such as religion, ethnicity, and language affect the likelihood of a person working in the tech space?  
@@ -38,7 +38,7 @@ The US is known as the melting pot of the world a fact that demonstrates pride i
 
 During the preprocessing stage it became immediately clear that this data would contain high variance. A fact that is expected given that the observations are real people and the sorce was dating profiles. This lead to a lengthy cleaning process in order to pair down features in the hopes of reducing the noise in the data. In the end, I still had many features to work with as seen in the correlation chart.  
 
-<p align="center"><img width="300" height="300" src="/images/corr.png" alt="okc_logo"></p>
+<p align="center"><img width="300" height="300" src="/images/Corr.png" alt="okc_logo"></p>
 
 
 
