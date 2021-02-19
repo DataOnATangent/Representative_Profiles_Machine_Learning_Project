@@ -2,7 +2,7 @@
 ## A case study using 2012 OKCupid Dating Profile Information 
 Authors: [Jiji Craynock](https://github.com/DataOnATangent)
 
-<p><img src="./images/Census_bureau.png" alt="Header"></p>
+<p><img src="/images/banner.png" alt="Header"></p>
 
 ## Overview
 In this case study, we test several categorical models in order to determine whether an individual makes above or below the US median salary (defined by www.census.gov as $65,000 a year). In order to do this, we pull the US Census API for the 2019 Public Use Microdata Sample (PUMS). We concentrate on the following questions:
@@ -14,7 +14,6 @@ In this case study, we test several categorical models in order to determine whe
 ## Approach
 ### Variables Key:
 <p><img src="./images/Census_Income_Variables.png" alt="Variables"></p>
-
 
 ### Data and model preparation in 3 major steps:
 
