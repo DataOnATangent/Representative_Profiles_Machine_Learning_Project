@@ -45,17 +45,17 @@ During the preprocessing stage it became immediately clear that this data would 
 Once the features had been peen put into charts individually, I was able to see that many features including had major imbalances. These imbalances were even more apperant when grouped compared specifically to those that do and do not work in the tech sphere.  
 
 <p align="center">
-    <img width="400" height="300" src="/images/Dist_gen.png" alt="gender_chart">
-    <img width="400" height="300" src="/images/Dist_body.png" alt="body_chart">
-    <img width="400" height="300" src="/images/Dist_ethn.png" alt="ethn_chart">
+    <img width="500" height="300" src="/images/Dist_gen.png" alt="gender_chart">
+    <img width="500" height="300" src="/images/Dist_body.png" alt="body_chart">
+    <img width="500" height="300" src="/images/Dist_ethn.png" alt="ethn_chart">
 </p>
 
 That being said, the differences between the general sample and tech workers was still highly relative due to the class imbalance between the positive and negative class. Something that is a bit easier to see when looking at parallel plots
 
 <p align="center">
-    <img width="400" height="300" src="/images/p_sex_ethn.png" alt="gender_chart">
-    <img width="400" height="300" src="/images/p_bod_ori.png" alt="body_chart">
-    <img width="400" height="300" src="/images/p_sm_dri_dru.png" alt="smo_chart">
+    <img width="500" height="300" src="/images/p_sex_ethn.png" alt="gender_chart">
+    <img width="500" height="300" src="/images/p_bod_ori.png" alt="body_chart">
+    <img width="500" height="300" src="/images/p_sm_dri_dru.png" alt="smo_chart">
 </p>
 
 
