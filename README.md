@@ -3,11 +3,12 @@
 Authors: [Jiji Craynock](https://github.com/DataOnATangent)
 
 <p><img src="/images/banner.png" alt="Header"></p>
+'(Correlation Chart of All Features)'
 
 ## Overview
 The US is known as the melting pot of the world a fact that demonstrates pride in diversity. Nevertheless, those of us who live here are aware that in many spaces the lack of variety in background is something that seems to occur quite often. In this case study, I test several categorical models in order to determine whether an individual can be properly classified as working in the computer/tech space by features by demographic information.   In order to do this, I have used the okcupid dataset (available on kaggle and linked below) and focus on the following questions:
 
-<p align="center"><img width="240" height="200" src="/images/okc_logo.png" alt="okc_logo"></p>
+<p align="center"><img width="260" height="200" src="/images/okc_logo.png" alt="okc_logo"></p>
 
 * How do physical attributes such as body type, age, and height affect the likelihood of a person working in the tech space?
 * How do cultural attributes such as religion, ethnicity, and language affect the likelihood of a person working in the tech space?  
@@ -44,17 +45,17 @@ During the preprocessing stage it became immediately clear that this data would 
 Once the features had been peen put into charts individually, I was able to see that many features including had major imbalances. These imbalances were even more apperant when grouped compared specifically to those that do and do not work in the tech sphere.  
 
 <p align="center">
-    <img width="200" height="150" src="/images/Dist_gen.png" alt="gender_chart">
-    <img width="200" height="150" src="/images/Dist_body.png" alt="body_chart">
-    <img width="200" height="150" src="/images/Dist_ethn.png" alt="ethn_chart">
+    <img width="400" height="300" src="/images/Dist_gen.png" alt="gender_chart">
+    <img width="400" height="300" src="/images/Dist_body.png" alt="body_chart">
+    <img width="400" height="300" src="/images/Dist_ethn.png" alt="ethn_chart">
 </p>
 
 That being said, the differences between the general sample and tech workers was still highly relative due to the class imbalance between the positive and negative class. Something that is a bit easier to see when looking at parallel plots
 
 <p align="center">
-    <img width="200" height="150" src="/images/p_sex_ethn.png" alt="gender_chart">
-    <img width="200" height="150" src="/images/p_bod_ori.png" alt="body_chart">
-    <img width="200" height="150" src="/images/p_sm_dri_drug.png" alt="smo_chart">
+    <img width="400" height="300" src="/images/p_sex_ethn.png" alt="gender_chart">
+    <img width="400" height="300" src="/images/p_bod_ori.png" alt="body_chart">
+    <img width="400" height="300" src="/images/p_sm_dri_dru.png" alt="smo_chart">
 </p>
 
 
