@@ -18,7 +18,7 @@ The US is known as the melting pot of the world a fact that demonstrates pride i
 
 ### Data and model preparation in 3 major steps:
 
-1. **Cleaning and Preprocessing:** Handeled all missing information, dropped unneeded/unusable columns, simplified categorical features by grouping similar groups together and removing attitudes from responses. The notebook containing this process with explanations on how each feature was treated can be found in the data_exploration folder. 
+1. **Cleaning and Preprocessing:** Handled all missing information, dropped unneeded/unusable columns, simplified categorical features by grouping similar groups together and removing attitudes from responses. The notebook containing this process with explanations on how each feature was treated can be found in the data_exploration folder. 
 
 2. **Exploratory Data Analysis:** Features were manipulated and used to create a myriad of visuals in order to better understand the distribution of the observations and possible relationships.
 
@@ -76,7 +76,7 @@ In order to take this project to the next level, I believe there are a number of
 
 ## Repository Structure
     
-    ├── data_exploration                  Preprocsing Notebook, EDA Notebooks, and Relevan Data
+    ├── data_exploration                  Preproccesing Notebook, EDA Notebooks, and Relevant Data
     ├── model_tests                       Original and resampled model testing noteboks    
     ├── final_notebook                    Final notebook containing final model
     ├── images                            Images
